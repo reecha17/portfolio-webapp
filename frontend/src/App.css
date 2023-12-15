@@ -1,0 +1,594 @@
+/* @import "node_modules/modern-normalize/modern-normalize.css"; */
+/* npm install modern-normalize
+          Resets elements for browser consistency.  
+          https://www.npmjs.com/package/modern-normalize
+        */
+
+/* Component-specific stylesheets, if any. 
+    @import "component1.css";   
+  */
+
+/* import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Open+Sans&family=Roboto&family=Ubuntu&display=swap");
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+/*   ----- Variables  -----  */
+:root {
+  --light-green: rgb(0, 255, 8);
+  --medium-green: rgb(0, 148, 7);
+  --dark-green: rgb(1, 53, 1);
+  --soft-red: rgb(255, 100, 100);
+  --dark-red: rgb(73, 0, 0);
+  --half-transparent-light-blue: rgba(0, 102, 255, 0.411);
+  --dark-blue: rgb(0, 18, 46);
+  --light-grey: #e5e6e9;
+  --medium-grey: #a5a8b1;
+  --orange: rgb(212, 114, 34);
+  --smedium-grey: #bdbec2;
+}
+
+/*  ----- Viewport ----- elements inherited by all remaining elements ----- */
+body {
+  /* Can alternatively define in html {} or :root {} */
+  background-color: var(--light-grey);
+  background-image: url(./images/sky-with-birds.JPG);
+  background-size: 100%;
+  color: var(--dark-blue);
+  font-family: "Roboto", "Open Sans", "Ubuntu", "Times New Roman", Times, serif;
+  /* Define with at least one font name and its related generic family name.*/
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 0px 5px;
+  max-width: 100%;
+}
+
+/*  ----- Page layout blocks -----  */
+header {
+  color: var(--dark-green);
+  background-color: var(--light-grey);
+  border: 1px solid var(--dark-green);
+  padding: 5px;
+  margin: 5px;
+}
+
+main {
+  color: var(--dark-green);
+  background-color: var(--light-grey);
+  border: 1px solid var(--dark-green);
+  padding: 5px;
+  margin: 5px;
+}
+
+section {
+}
+
+article:not(:last-child) {
+  border-bottom: 2px solid var(--dark-green);
+}
+
+#topic1 {
+}
+
+#topic2 {
+}
+
+div {
+}
+
+aside {
+}
+
+footer {
+  color: var(--dark-blue);
+}
+
+/* ----- Anchors ----- Text links */
+a {
+  color: var(--dark-green);
+}
+
+a:link {
+}
+
+a:hover {
+}
+
+a:active {
+}
+
+a:visited {
+}
+
+/*  ----- Navigation ----- Override text links for navigation only.  */
+nav {
+  padding: 5px;
+  margin: 10px;
+  margin-left: 0px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--dark-green);
+  background-color: var(--light-grey);
+  padding: 5px;
+  margin: 5px;
+  margin-left: 0px;
+  border: 1px solid var(--dark-blue);
+  border-radius: 10%;
+}
+
+nav a:hover {
+  background-color: var(--medium-grey);
+  text-decoration: underline;
+}
+
+/*  -----  Typography  ----- */
+p {
+  color: var(--dark-blue);
+  margin-top: 10px;
+}
+
+br {
+}
+
+ol,
+ul,
+dl {
+  color: var(--dark-blue);
+}
+
+li {
+}
+
+dt {
+}
+
+dd {
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Aboreto";
+  text-decoration: underline;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  color: var(--dark-green);
+}
+
+h2 {
+}
+
+h3 {
+  color: var(--dark-red);
+  margin-bottom: 5px;
+}
+
+h4 {
+}
+
+h5 {
+}
+
+h6 {
+}
+
+abbr {
+}
+
+acronym {
+}
+
+address {
+}
+
+blockquote {
+}
+
+q {
+}
+
+cite {
+}
+
+em {
+}
+
+hr {
+}
+
+mark {
+}
+
+s {
+}
+
+span {
+}
+
+strong {
+}
+
+sub {
+}
+
+sup {
+}
+
+time {
+}
+
+/*  ----- Coding or instructional typography ----- */
+pre {
+}
+
+code {
+}
+
+kbd {
+}
+
+samp {
+}
+
+var {
+}
+
+del {
+}
+
+ins {
+}
+
+/*  ----- Table ----- */
+table {
+  border: 2px solid var(--dark-green);
+}
+
+caption {
+  color: var(--dark-red);
+}
+
+thead {
+}
+
+tbody {
+}
+
+tfoot {
+}
+
+tr {
+}
+
+tr:nth-child(even) {
+}
+
+th {
+}
+
+td {
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+td:nth-child(1) {
+}
+
+colgroup {
+}
+
+data {
+}
+
+datalist {
+}
+
+tr th {
+  border-bottom: solid 2px var(--dark-green);
+  padding: 5px 8px;
+}
+
+tr td {
+  color: var(--dark-blue);
+  padding: 8px 8px;
+}
+
+tr:nth-child(even) td {background-color: var(--smedium-grey);}
+
+/*  ----- Form ----- */
+form {
+  font-family: "Roboto", "Open Sans", "Ubuntu", "Times New Roman", Times, serif;
+}
+
+fieldset {
+  border: 3px solid var(--dark-green);
+}
+
+legend {
+  color: ;
+  font-size: ;
+}
+
+label {
+  display: block;
+  margin-top: 2%;
+}
+
+input, button, textarea, select {
+  font-size:110%;
+  padding:1%;
+  font-family:inherit;
+}
+
+button {
+  display: flex;
+  margin-top: 1%;
+}
+
+input {
+}
+
+input:invalid {
+  border:3px solid red;
+}
+
+input:valid {
+  border:2px solid green;
+}
+
+input:disabled {
+  background: repeating-linear-gradient(142deg, #CCCCCC, #CCCCCC 4px, #999999 22px);
+}
+
+input:enabled {
+  background: white;
+}
+
+input::placeholder {
+  color:darkgray;
+}
+
+input[type=checkbox]:checked + label {
+  color: green;
+  font-style: italic;
+} 
+
+output {
+}
+
+meter {
+}
+
+progress {
+}
+
+select {
+}
+
+optgroup {
+}
+
+option {
+}
+
+textarea {
+}
+
+*:required {
+  border:2px solid green;
+}
+
+label.required:after {
+  content:" *";
+  color:red;
+}
+
+input:focus {
+  border: 5px solid var(--orange);
+}
+
+/* ----- Media ----- */
+figure {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+}
+
+figcaption {
+  color: var(--dark-blue);
+  width: 400px;
+}
+
+figure img {
+  object-fit: cover;
+  border: 2px solid var(--dark-red);
+  overflow: hidden;
+}
+
+svg {
+}
+
+picture {
+}
+
+source {
+}
+
+iframe {
+}
+
+video {
+}
+
+audio {
+}
+
+embed {
+}
+
+object {
+}
+
+/*  ----- Classes for alignment, positioning, widths, grids, embellishments, and animation -----  */
+.contents {
+  display: flex;
+  flex-direction: column;
+  border-top: 2px solid var(--dark-green);
+  border-bottom: 2px solid var(--dark-green);
+}
+
+.contents a {
+  width: fit-content;
+  border: none;
+  font-size: 15px;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.quantity{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.floatright {
+}
+
+.floatleft {
+}
+
+.center-middle {
+}
+
+.ten {
+}
+
+.twenty {
+}
+
+.thirty {
+}
+
+.forty {
+}
+
+.fifty {
+}
+
+.sixty {
+}
+
+.seventy {
+}
+
+.eighty {
+}
+
+.radius {
+}
+
+.circle {
+}
+
+.boxshadow {
+}
+
+.tshadow {
+}
+
+.gradient {
+}
+
+.shape {
+}
+
+.random-button{
+  display: flex;
+}
+
+.random-button button{
+  margin: 1%;
+  width: 100px;
+  justify-content: center;
+}
+
+.add {
+  border: none;
+}
+
+.add:hover {
+  background-color: var(--medium-grey);
+  border-radius: 50%;
+}
+
+.match-table-button:hover {
+  background-color: var(--medium-grey);
+}
+
+@keyframes App-logo {
+}
+
+/*   ===== TABLET  media query overrides mobile styles ===== */
+@media all and (min-width: 600px) {
+}
+
+/*   ===== DESKTOP  media query overrides mobile and tablet styles ===== */
+@media all and (min-width: 1080px) {
+}
+
+/*   ===== PRINT  media query overrides previous styles =====  */
+@media print {
+}
+
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
